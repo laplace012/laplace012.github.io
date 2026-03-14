@@ -3,70 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Research Page</title>
+    <title>Laplace012 | p-adic  </title>
+    
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
     <style>
-        body { font-family: "Times New Roman", Times, serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; background: #fdfdfd; }
-        header { border-bottom: 2px solid #333; margin-bottom: 30px; padding-bottom: 10px; }
-        h1 { margin-bottom: 5px; }
-        h2 { border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 40px; }
-        .sidebar-info { color: #666; font-style: italic; }
-        .pub-item { margin-bottom: 15px; }
-        .pub-title { font-weight: bold; color: #0056b3; }
-        a { color: #0056b3; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .math-box { background: #f4f4f4; padding: 15px; border-left: 5px solid #ccc; margin: 20px 0; }
+        /* 基础样式定义 */
+        body { font-family: "Times New Roman", Times, serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 0 20px; color: #333; background: #fdfdfd; }
+        
+        /* 顶部导航栏 */
+        nav { background-color: #2c3e50; padding: 12px 0; text-align: center; position: sticky; top: 0; z-index: 1000; margin-bottom: 30px; border-radius: 0 0 8px 8px; }
+        nav a { color: white; padding: 10px 18px; text-decoration: none; font-weight: bold; font-family: Arial, sans-serif; font-size: 0.95em; }
+        nav a:hover { background-color: #34495e; border-radius: 4px; }
+
+        /* 页眉部分 */
+        header { border-bottom: 2px solid #2c3e50; margin-bottom: 30px; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+        .header-text h1 { margin: 0; color: #2c3e50; }
+        .header-info { color: #666; font-style: italic; }
+
+        /* 内容板块 */
+        h2 { border-left: 5px solid #2c3e50; padding-left: 10px; margin-top: 40px; color: #2c3e50; font-family: Arial, sans-serif; }
+        .math-box { background: #f9f9f9; padding: 18px; border: 1px dashed #ccc; margin: 20px 0; border-radius: 4px; }
+        
+        /* 列表与按钮样式 */
+        .item { margin-bottom: 25px; padding-left: 10px; }
+        .item-title { font-weight: bold; color: #000; display: block; }
+        .button-group { margin-top: 8px; }
+        .btn { display: inline-block; padding: 3px 12px; margin-right: 8px; font-size: 0.85em; border-radius: 4px; color: white !important; text-decoration: none !important; transition: 0.3s; }
+        .pdf-btn { background-color: #c0392b; }
+        .arxiv-btn { background-color: #2c3e50; }
+        .ppt-btn { background-color: #2980b9; }
+        .btn:hover { opacity: 0.7; transform: translateY(-1px); }
+
+        /* 响应式调整 */
+        @media (max-width: 600px) { nav a { padding: 5px 10px; font-size: 0.8em; } }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Ruishen Zhao</h1>
- 
-    <p>Email: <a href="mailto:zrs13@tsinghua.org.cn">zrs13@tsinghua.org.cn</a> 
-       
-</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="publications.html">Preprints & Publications</a>
+        <a href="seminars.html">Seminars</a>
+        <a href="notes.html">Notes</a>
+        <a href="links.html">Links</a>
+    </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>My name is Ruishen Zhao. During 2022.09-2025.06 I was a postdoc in Morningside Center of Mathematics. Since 2025.09 I became a postdoc in Yau Mathematical Sciences Center.    
-      
-</header>
+    <header>
+        <div class="header-text">
+            <h1>Ruishen Zhao</h1>
+             
+        </div>
+        <div style="text-align: right; font-size: 0.9em;">
+            Email: <a href="mailto:zrs13@tsinghua.org.cn">zrs13@tsinghua.org.cn</a><br>
+            
+        </div>
+    </header>
 
-<section id="research">
-    <h2>Research & Interests</h2>
-    <div class="math-box">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Ruishen Zhao. During 2022.09-2025.06 I was a postdoc in Morningside Center of Mathematics. Since 2025.09 I became a postdoc in Yau Mathematical Sciences Center.</p>
+        
+         
+    </section>
+    <section id="Research interest">
+        <h2> Research & Interests </h2>
+       <div class="math-box">
    Broadly speaking, my research interests lie in p-adic automorphic forms, eigenvarieties, and Shimura varieties.
 A central theme of my work is the arithmetic of motives, especially their <i>p</i>-adic variation.
     </div>
-    
-</section>
+        </section> 
 
-<section id="Preprints and Publications">
-    <h2>Preprints and Publications</h2>
-    <div class="pub-item">
-        <span class="pub-title">On the $p$-adic properties of Shimura varieties</span>, <br>
-        <em>Journal of Number Theory</em>, 2025. [<a href="#">PDF</a>] [<a href="#">arXiv</a>]
-    </div>
-    <div class="pub-item">
-        <span class="pub-title">Eigenvarieties and their geometry</span>, <br>
-        <em>Preprint</em>, 2024.
-    </div>
-</section>
+    <section id="preprints">
+        <h2>Preprints and publications</h2>
+        
+        <div class="item">
+            <span class="item-title">Perfectoid unitary Shimura varieties and -adic Eichler-Shimura map I</span>
+           
+            <div class="button-group">
+                <a href="assets/pdf/paper1.pdf" class="btn pdf-btn">PDF</a>
+                <a href="https://arxiv.org/abs/2602.22189" class="btn arxiv-btn">arXiv</a>
+            </div>
+        </div>
+    </section>
 
-<section id="Talks">
-    <h2>Talks</h2>
-    <ul>
-        <li>Fall 2025: Advanced Number Theory</li>
-        <li>Spring 2025: Linear Algebra</li>
-    </ul>
-</section>
+    <section id="talks">
+        <h2>Selected Talks</h2>
+        
+        <div class="item">
+            <span class="item-title">Perfectoid unitary Shimura varieties and Overconvergent Eichler-Shimura map</span>
+            <span>Workshop on Arithmetic Geometry and Representation Theory, Harbin Institute of Technology, 2025 June.</span>
+            <div class="button-group">
+                <a href="assets/slides/talk1.pdf" class="btn ppt-btn">Slides</a>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    <hr>
-    <p style="font-size: 0.8em; color: #888;">&copy; 2026 Ruishen Zhao. Last updated: March 2026.</p>
-</footer>
+    <footer style="margin-top: 100px; padding: 20px 0; border-top: 1px solid #eee; font-size: 0.8em; color: #888; text-align: center;">
+        &copy; 2026 Ruishen Zhao. Built with pure HTML/CSS. Last updated: March 2026.
+    </footer>
 
 </body>
+</html>
 </html>
