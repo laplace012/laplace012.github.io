@@ -38,6 +38,22 @@
 
         /* 响应式调整 */
         @media (max-width: 600px) { nav a { padding: 5px 10px; font-size: 0.8em; } }
+
+.notes-disclaimer {
+    font-style: italic;    /* 斜体 */
+    color: #666;           /* 灰色，不抢标题风头 */
+    margin-top: -15px;     /* 让它离标题近一点 */
+    margin-bottom: 30px;   /* 离下面的正文远一点 */
+    font-size: 0.95em;     /* 字号稍微调小一点点 */
+    line-height: 1.5;
+}
+
+/* 给备注里的邮箱链接加个下划线效果 */
+.notes-disclaimer a {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+        
     </style>
 </head>
 <body>
@@ -51,11 +67,14 @@
     </nav>
 
 
-    
- 
-    <header>
-        <h1>Notes</h1>
-    </header>
+  <header>
+    <h1>Notes</h1>
+    <p class="notes-disclaimer">
+        These are my expository notes. If you have any comments or suggestions, 
+        please contact me at <a href="mailto:zrs13@tsinghua.org.cn">zrs13@tsinghua.org.cn</a>. 
+        Any feedback is welcome!
+    </p>
+</header>
 
   
 </body>
