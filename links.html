@@ -38,6 +38,31 @@
 
         /* 响应式调整 */
         @media (max-width: 600px) { nav a { padding: 5px 10px; font-size: 0.8em; } }
+
+/* Links 特有样式 */
+        .link-category { margin-bottom: 40px; }
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .link-card {
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        .link-card:hover { background: #f9f9f9; border-color: #2c3e50; }
+        .link-card a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .link-card p { margin: 5px 0 0 0; font-size: 0.9em; color: #666; }
+
+        
     </style>
 </head>
 <body>
@@ -56,7 +81,58 @@
     <header>
         <h1>Some useful links (very incomplete)</h1>
     </header>
+     <div class="link-card">
+                <a href="http://www.mcm.ac.cn/" target="_blank">Morningside Center of Mathematics</a>
+          
+            </div>
+    <div class="link-card">
+                <a href="https://bicmr.pku.edu.cn/~lxiao/" target="_blank">Liang Xiao</a>
+          
+            </div>
 
+       <div class="link-card">
+                <a href="https://math.uchicago.edu/~luepan/" target="_blank">Lue Pan</a>
+               
+            </div>
+ <div class="link-card">
+                <a href="https://people.brandeis.edu/~jbellaic/" target="_blank">Joël BELLAÏCHE</a>
+               
+            </div>
+
+     <div class="link-card">
+                <a href="https://www.math.columbia.edu/~chaoli/" target="_blank">Chao Li</a>
+               
+            </div>
+
+       
+            <div class="link-card">
+                <a href="https://www.math.uni-bonn.edu/people/scholze/" target="_blank">Peter Scholze</a>
+              
+            </div>
+
+         
+         
+
+            <div class="link-card">
+                <a href="https://alex-youcis.github.io/" target="_blank">Alex Youcis</a>
+              
+            </div>
+             <div class="link-card">
+                <a href="https://stacks.math.columbia.edu/" target="_blank">Stacks Project</a>
+        </div>
+
+ 
+        
+           
+              
+     
+
+    
+
+    <footer style="margin-top: 100px; text-align: center; color: #888; font-size: 0.8em;">
+        &copy; 2026 Laplace012. Last updated: March 2026.
+    </footer>
+    
   
 </body>
 </html>
