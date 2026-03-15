@@ -40,9 +40,9 @@
         @media (max-width: 600px) { nav a { padding: 5px 10px; font-size: 0.8em; } }
 
 .notes-disclaimer {
-    display: block;        /* 确保独占一行 */
+    display: block    !important;        /* 确保独占一行 */
     font-style: italic;    /* 斜体增加学术感 */
-    color: #555;           /* 深灰色 */
+    color: #666;           /* 深灰色 */
     margin-top: 10px;      /* 离标题 Notes 的距离 */
     margin-bottom: 30px;   /* 离下方列表的距离 */
     padding-left: 5px;     /* 微调对齐 */
@@ -69,12 +69,18 @@
     </nav>
 
 
- <header style="display: block;"> <h1>Notes</h1>
-    <p class="notes-disclaimer">
-        These are my expository notes. If you have any comments or suggestions, 
-        please contact me at <a href="mailto:zrs@tsinghua.org.cn">zrs@tsinghua.org.cn</a>. 
-        Any feedback is welcome!
-    </p>
+<header style="display: block; border-bottom: 2px solid #2c3e50; margin-bottom: 30px; padding-bottom: 15px;">
+    <div style="width: 100%;">
+        <h1 style="margin: 0 0 10px 0;">Notes</h1>
+    </div>
+    
+    <div style="width: 100%;">
+        <p class="notes-disclaimer" style="margin: 0; font-style: italic; color: #666;">
+            These are my expository notes. If you have any comments or suggestions, 
+            please contact me at <a href="mailto:zrs@tsinghua.org.cn">zrs@tsinghua.org.cn</a>. 
+            Any feedback is welcome!
+        </p>
+    </div>
 </header>
 
   
